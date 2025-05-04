@@ -28,7 +28,7 @@ const Manager = () => {
             setpasswordArray([...passwordArray, { ...form, id: uuidv4() }])
             localStorage.setItem("passwords", JSON.stringify([...passwordArray, { ...form, id: uuidv4() }]))
             console.log(passwordArray)
-            setform({ site: "", username: "", password: "" })
+            setform({ site: "", username: "", pass: "" })
             toast('Password saved!', {
                 position: "top-right",
                 autoClose: 5000,
